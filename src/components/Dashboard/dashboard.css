@@ -1,0 +1,199 @@
+@value theme: "Styles/theme.css";
+
+@value blueText, grayDark, gray, blue, screen-md, screen-lg from theme;
+
+.contentWrapper {
+    position: relative;
+}
+
+.RightImage {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.LeftImage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.titleSection {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.firstTitle {
+    display: flex;
+}
+
+.firstTitleItem {
+    flex: 0 1 33%;
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+.secondTitle {
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.title {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: center;
+}
+
+.buttonsContent {
+
+}
+
+.firstRow {
+    display: flex;
+    margin-right: 10%;
+}
+
+.secondRow {
+    display: flex;
+    margin-left: 10%;
+}
+
+.buttonItem {
+    
+    flex: 0 1 25%;
+}
+
+.imageWrapper {
+    position: relative;
+    width: fit-content;
+}
+
+.reportLine {
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    height: 120%;
+    bottom: 0px;
+    transform: translateY(100%);
+}
+
+.reportLine img {
+    height: 100%;
+}
+
+.reportText {
+    position: absolute;
+    width: 480px;
+    right: -7px;
+    bottom: 27px;
+    transform: translate(100%, 100%);
+}
+
+.reportText span {
+    display: block;
+    
+}
+
+.reportTitle {
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 700;
+    text-align: left;
+}
+
+.reportDesc {
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 300;
+    text-align: left;
+}
+
+@media (min-width: screen-md) and (max-width: 1024px) {
+    .hexaImage {
+        width: 150px;
+    }
+
+    .reportText {
+        width: 370px;
+        bottom: 20px;
+    }
+
+    .reportDesc {
+        font-size: 16px;
+    }
+
+    .reportTitle {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: screen-md){
+    .hexaImage {
+        width: 100px;
+    }
+
+    .reportText {
+        width: 270px;
+        bottom: 13px;
+    }
+
+    .reportDesc {
+        font-size: 14px;
+    }
+
+    .reportTitle {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .firstTitle {
+        display: block;
+    }
+    
+    .firstTitleItem {
+        display: block;
+    }
+
+    .hexaImage {
+        width: 60px;
+    }
+
+    .reportText {
+        width: 150px;
+        bottom: 13px;
+    }
+
+    .reportDesc {
+        font-size: 14px;
+    }
+
+    .reportTitle {
+        font-size: 16px;
+    }
+}
